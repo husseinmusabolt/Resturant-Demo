@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+/* Navigation */
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.logo span,
+footer span {
+    color: #ff9d00;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff9d00;
+}
+
+.nav-btn,
+.primary-btn {
+    background: #ff9d00;
+    color: #111;
+    padding: 13px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+        url("https://images.unsplash.com/photo-1504674900247-0877df9cc836")
+        center/cover;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.small-title {
+    color: #ff9d00;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: clamp(45px, 7vw, 85px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero h2 span {
+    color: #ff9d00;
+}
+
+.hero-text {
+    max-width: 550px;
+    color: #ddd;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.secondary-btn {
+    border: 1px solid white;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Sections */
+
+section {
+    padding: 100px 5%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #ff9d00;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* Menu */
+
+.food-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.food-card {
+    background: #1d1d1d;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+}
+
+.food-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+}
+
+.rice {
+    background-image:
+        url("https://images.unsplash.com/photo-1601050690597-df0568f70950");
+}
+
+.burger {
+    background-image:
+        url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd");
+}
+
+.pasta {
+    background-image:
+        url("https://images.unsplash.com/photo-1551892374-ecf8754cf8b0");
+}
+
+.food-info {
+    padding: 25px;
+}
+
+.food-info h3 {
+    margin-bottom: 10px;
+}
+
+.food-info p {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.food-info strong {
+    color: #ff9d00;
+    font-size: 20px;
+}
+
+/* About */
+
+.about {
+    background: #181818;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    align-items: center;
+}
+
+.about-image {
+    min-height: 450px;
+
+    background:
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4")
+        center/cover;
+
+    border-radius: 15px;
+}
+
+.about-content h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: #bbb;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Contact */
+
+.contact {
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.contact-container div {
+    background: #1d1d1d;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-container h3 {
+    color: #ff9d00;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    color: #bbb;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #090909;
+}
+
+footer p {
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .nav-links,
+    .nav-btn {
+        display: none;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .food-container,
+    .contact-container,
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-image {
+        min-height: 300px;
+    }
+
+}
